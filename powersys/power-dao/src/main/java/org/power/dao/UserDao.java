@@ -1,7 +1,9 @@
 package org.power.dao;
 
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 import org.power.entity.User;
+import org.springframework.stereotype.Component;
 
 /**
  * 
@@ -12,6 +14,7 @@ import org.power.entity.User;
  * @date:2019年10月13日
  * @version:V1.0
  */
+@Mapper
 public interface UserDao {
 	@Select("")
 	public User userLogin(String username, String password);
