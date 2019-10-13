@@ -17,7 +17,7 @@ public class UserServiceImp implements UserService{
 	@Override
 	public boolean userLogin(User user) {
 		boolean flag=false;
-		log.info("用户登录");
+		log.info("执行此方法");
 		//return userDao.userLogin(user, password);
 		return flag;
 	}
